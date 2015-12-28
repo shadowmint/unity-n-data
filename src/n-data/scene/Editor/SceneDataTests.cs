@@ -29,7 +29,7 @@ public class SceneDataTests : N.Tests.Test
 
         var thawed = Json.Deserialize<SceneData>(serialized).Unwrap();
         thawed.Deserialize();
-        thawed.Destroy();
+        thawed.Destroy(true);
 
         this.TearDown();
     }

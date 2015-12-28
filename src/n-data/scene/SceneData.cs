@@ -42,7 +42,7 @@ namespace N.Package.Data.Scene
         {
             foreach (var rp in refs)
             {
-                rp.Destroy();
+                rp.Destroy(immediate);
             }
             return this;
         }
