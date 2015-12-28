@@ -1,13 +1,28 @@
-# n-input
+# n-data
 
-Low level input semantics.
-
-Typically prefer to use a high level controller rather than this package
-directly.
+Data serialization utility functions.
 
 ## Usage
 
 See the tests in the `Editor/` folder for each class for usage examples.
+
+For full scene serializataion see `SceneDataTests.cs`; typical usage would
+be similar to:
+
+    using N.Package.Data.Scene;
+    using N.Package.Data;
+
+    var instance = new SceneData().Serialize();
+    var serialized = Json.Serialize(instance);
+
+    ...
+
+    var thawed = Json.Deserialize<SceneData>(serialized).Unwrap();
+    thawed.Deserialize();
+    thawed.Destroy(true);
+
+NB. That only objects tagged with the `SceneFabricated` component are serialized,
+and certain serialization limitations (eg. references) apply.
 
 ## Install
 
