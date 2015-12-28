@@ -1,3 +1,4 @@
+#if N_DATA_TESTS
 using N.Package.Data;
 using NUnit.Framework;
 
@@ -17,3 +18,4 @@ public class ManifestTests : N.Tests.Test {
       this.Assert(manifest == null);
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if N_DATA_TESTS
 using UnityEngine;
 using System.Collections.Generic;
 using NUnit.Framework;
@@ -33,3 +34,4 @@ public class SceneDataTests : N.Tests.Test
         this.TearDown();
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if N_DATA_TESTS
 using N.Package.Data;
 using NUnit.Framework;
 
@@ -8,3 +9,4 @@ public class TestManifestBuilder : N.Tests.Test
         ManifestBuilder.Run("package-data");
     }
 }
+#endif

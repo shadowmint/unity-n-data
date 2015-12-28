@@ -1,3 +1,4 @@
+#if N_DATA_TESTS
 using UnityEngine;
 using N.Package.Data;
 using NUnit.Framework;
@@ -127,3 +128,4 @@ public class JsonTests : N.Tests.Test
         }
     }
 }
+#endif
