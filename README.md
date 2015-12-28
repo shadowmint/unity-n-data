@@ -29,7 +29,7 @@ and certain serialization limitations (eg. references) apply.
 From your unity project folder:
 
     npm init
-    npm install shadowmint/unity-n-core --save
+    npm install shadowmint/unity-n-data --save
     echo Assets/packages >> .gitignore
     echo Assets/packages.meta >> .gitignore
 
