@@ -55,7 +55,7 @@ namespace N.Package.Data
                         }
                         var manifest = new Manifest() { files = files, folders = dirs };
                         var output = Json.Serialize(manifest);
-                        File.WriteAllText(Path.Combine(path, "manifest.json"), output);
+                        System.IO.File.WriteAllText(Path.Combine(path, "manifest.json"), output);
                         N.Console.Log("Generated manifest for: {0}", path);
                     }
                 }
