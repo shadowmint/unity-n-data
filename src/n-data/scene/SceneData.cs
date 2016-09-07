@@ -13,7 +13,7 @@ namespace N.Package.Data.Scene
         public SceneData Serialize()
         {
             var refs = new List<SceneRef>();
-            foreach (var fab in N.Scene.FindComponents<SceneFabricated>())
+            foreach (var fab in Core.Scene.FindComponents<SceneFabricated>())
             {
                 refs.Add(new SceneRef().Serialize(fab.gameObject));
             }

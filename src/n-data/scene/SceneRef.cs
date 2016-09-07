@@ -1,3 +1,4 @@
+using N.Package.Core;
 using UnityEngine;
 using N.Package.Data;
 
@@ -35,9 +36,9 @@ namespace N.Package.Data.Scene
         public Option<GameObject> Deserialize()
         {
             var rtn = Option.None<GameObject>();
-            N.Scene.Prefab(prefab).Then((fp) =>
+            Core.Scene.Prefab(prefab).Then((fp) =>
             {
-                N.Scene.Spawn(fp).Then((ip) =>
+                Core.Scene.Spawn(fp).Then((ip) =>
                 {
                     instance = Option.Some(ip);
                     transform.Deserialize(ip);

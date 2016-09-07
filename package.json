@@ -1,6 +1,6 @@
 {
   "name": "unity-n-data",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "n-data",
   "main": "index.js",
   "repository": {
@@ -25,6 +25,6 @@
     "mkdirp": "^0.5.1",
     "ncp": "^2.0.0",
     "unity-fullserializer": "github:jacobdufault/fullserializer#c79cfc4027f00ea0fbbcb694ff164ad4e55c16a9",
-    "unity-n-core": "github:shadowmint/unity-n-core#0.0.3"
+    "unity-n-core": "github:shadowmint/unity-n-core#2.0.1"
   }
 }
